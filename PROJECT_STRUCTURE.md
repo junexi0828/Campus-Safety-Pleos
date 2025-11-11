@@ -17,6 +17,13 @@ pleos/
 │   ├── API.md                 # API 명세서
 │   └── SETUP.md               # 개발 환경 설정
 │
+├── user-story-map/             # 유저 스토리맵 (React + Vite)
+│   ├── src/
+│   │   ├── components/        # 스토리맵 컴포넌트
+│   │   └── App.tsx
+│   ├── package.json
+│   └── vite.config.ts
+│
 ├── mobile-app/                 # 학생용 모바일 앱 (Android)
 │   ├── app/
 │   │   ├── src/

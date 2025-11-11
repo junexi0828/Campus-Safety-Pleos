@@ -52,6 +52,7 @@ pleos/
 │   ├── PROJECT_ANALYSIS.md # 방향성 분석
 │   ├── ARCHITECTURE.md      # 시스템 아키텍처
 │   └── API.md              # API 명세서
+├── user-story-map/         # 유저 스토리맵 (React)
 ├── mobile-app/             # 학생용 모바일 앱
 ├── vehicle-app/            # 순찰차용 앱 (Pleos)
 ├── backend/                 # Backend 서버
@@ -120,10 +121,11 @@ pleos/
 ## 📚 문서
 
 - [프로젝트 방향성 분석](PROJECT_ANALYSIS.md)
-- [시스템 아키텍처](docs/ARCHITECTURE.md) (작성 예정)
-- [API 명세서](docs/API.md) (작성 예정)
-- [개발 환경 설정](docs/SETUP.md) (작성 예정)
-- [기여 가이드](CONTRIBUTING.md) (작성 예정)
+- [유저 스토리맵](user-story-map/README.md)
+- [시스템 아키텍처](docs/ARCHITECTURE.md)
+- [API 명세서](docs/API.md)
+- [개발 환경 설정](docs/SETUP.md)
+- [기여 가이드](CONTRIBUTING.md)
 
 ## 🤝 기여하기
 
