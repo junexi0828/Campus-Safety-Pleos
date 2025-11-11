@@ -188,8 +188,9 @@ Backend API 서버
 
 ## 🔗 관련 문서
 
-- [README.md](README.md): 프로젝트 개요
-- [CONTRIBUTING.md](CONTRIBUTING.md): 기여 가이드
-- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): 시스템 아키텍처
-- [docs/SETUP.md](docs/SETUP.md): 개발 환경 설정
+- [메인 README](../../README.md): 프로젝트 개요
+- [기여 가이드](../../CONTRIBUTING.md): 기여 가이드
+- [시스템 아키텍처](../ARCHITECTURE.md): 시스템 아키텍처
+- [개발 환경 설정](../SETUP.md): 개발 환경 설정
+- [프로젝트 방향성 분석](analysis.md): 방향성 분석
 

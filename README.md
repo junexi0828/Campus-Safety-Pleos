@@ -49,9 +49,15 @@
 ```
 pleos/
 ├── docs/                    # 프로젝트 문서
-│   ├── PROJECT_ANALYSIS.md # 방향성 분석
-│   ├── ARCHITECTURE.md      # 시스템 아키텍처
-│   └── API.md              # API 명세서
+│   ├── project/            # 프로젝트 관리 문서
+│   │   ├── analysis.md    # 방향성 분석
+│   │   └── structure.md   # 프로젝트 구조
+│   ├── reports/           # 프로젝트 보고서
+│   │   ├── final-report.md    # 최종 종합 보고서
+│   │   └── pleos-report.md    # 전체 종합 보고서
+│   ├── ARCHITECTURE.md    # 시스템 아키텍처
+│   ├── API.md            # API 명세서
+│   └── SETUP.md          # 개발 환경 설정
 ├── user-story-map/         # 유저 스토리맵 (React)
 ├── mobile-app/             # 학생용 모바일 앱
 ├── vehicle-app/            # 순찰차용 앱 (Pleos)
@@ -120,12 +126,27 @@ pleos/
 
 ## 📚 문서
 
-- [프로젝트 방향성 분석](PROJECT_ANALYSIS.md)
-- [유저 스토리맵](user-story-map/README.md)
-- [시스템 아키텍처](docs/ARCHITECTURE.md)
-- [API 명세서](docs/API.md)
-- [개발 환경 설정](docs/SETUP.md)
-- [기여 가이드](CONTRIBUTING.md)
+### 🚀 빠른 시작
+
+- [개발 환경 설정](docs/SETUP.md) - 프로젝트 개발 환경 구축 가이드
+- [시스템 아키텍처](docs/ARCHITECTURE.md) - 전체 시스템 구조 및 컴포넌트 설명
+- [API 명세서](docs/API.md) - Backend API 엔드포인트 및 사용 방법
+
+### 📋 프로젝트 관리
+
+- [프로젝트 방향성 분석](docs/project/analysis.md) - 두 보고서 비교 및 권장 방향성
+- [프로젝트 구조](docs/project/structure.md) - 디렉토리 구조 및 개발 워크플로우
+- [유저 스토리맵](user-story-map/README.md) - 사용자 관점 기능 시각화
+
+### 📊 프로젝트 보고서
+
+- [최종 종합 보고서](docs/reports/final-report.md) - MVP 중심 실행 계획 (권장)
+- [전체 종합 보고서](docs/reports/pleos-report.md) - 상세 기술 사양 및 확장 계획
+
+### 🤝 기여 및 가이드
+
+- [기여 가이드](CONTRIBUTING.md) - 코드 기여 방법 및 코딩 스타일
+- [라이선스](LICENSE) - MIT 라이선스
 
 ## 🤝 기여하기
 
@@ -137,9 +158,16 @@ pleos/
 
 ## 🔗 관련 링크
 
-- [Pleos Playground](https://pleos.ai)
-- [Android Automotive OS 문서](https://source.android.com/devices/automotive)
-- [프로젝트 보고서](Campus-Safety-Final-Report.md)
+### 외부 리소스
+
+- [Pleos Playground](https://pleos.ai) - Pleos Connect SDK 공식 사이트
+- [Android Automotive OS 문서](https://source.android.com/devices/automotive) - AAOS 개발 가이드
+- [Firebase 문서](https://firebase.google.com/docs) - FCM 푸시 알림 설정
+
+### 프로젝트 문서
+
+- [프로젝트 방향성 분석](docs/project/analysis.md) - 프로젝트 전략 및 우선순위
+- [최종 보고서](docs/reports/final-report.md) - 프로젝트 계획 및 일정
 
 ## 📞 문의
 
