@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm ci
+          fi
+      - name: Run linter
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm run lint
+          fi
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm ci
+          fi
+      - name: Run tests
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm test
+          fi
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm ci
+          fi
+      - name: Build
+        run: |
+          if [ -f backend/package.json ]; then
+            cd backend && npm run build
+          fi
+

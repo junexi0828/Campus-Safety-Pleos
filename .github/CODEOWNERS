@@ -1,0 +1,29 @@
+# CODEOWNERS 파일
+# 이 파일은 특정 파일이나 디렉토리 변경 시 자동으로 리뷰어를 지정합니다.
+# 자세한 내용: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# 전체 프로젝트 관리자
+* @project-lead
+
+# Android 앱
+/mobile-app/ @android-team
+/vehicle-app/ @android-team
+
+# Backend
+/backend/ @backend-team
+
+# 웹 대시보드
+/dashboard/ @frontend-team
+
+# 인프라 및 DevOps
+/infrastructure/ @devops-team
+/.github/ @devops-team
+
+# 문서
+/docs/ @project-lead
+*.md @project-lead
+
+# 설정 파일
+/.gitignore @project-lead
+/LICENSE @project-lead
+
