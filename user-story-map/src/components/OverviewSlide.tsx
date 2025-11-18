@@ -5,7 +5,7 @@ export default function OverviewSlide() {
   return (
     <div className="h-full bg-slate-50 p-12 overflow-y-auto">
       <h2 className="text-4xl text-slate-900 mb-8">프로젝트 개요</h2>
-      
+
       <div className="grid grid-cols-2 gap-6 mb-8">
         <Card className="p-6 bg-white border-blue-200">
           <div className="flex items-start gap-4">

@@ -146,7 +146,7 @@ export default function AdminStoryMapSlide() {
                 {epic.priority}
               </Badge>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {epic.stories.map((item, storyIndex) => (
                 <div key={storyIndex} className="bg-slate-50 rounded-lg p-3">

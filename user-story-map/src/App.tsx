@@ -8,25 +8,33 @@ import { Card } from './components/ui/card';
 import TitleSlide from './components/TitleSlide';
 import OverviewSlide from './components/OverviewSlide';
 import EpicDefinitionSlide from './components/EpicDefinitionSlide';
+import IntegratedFlowSlide from './components/IntegratedFlowSlide';
 import StudentStoryMapSlide from './components/StudentStoryMapSlide';
 import PatrolStoryMapSlide from './components/PatrolStoryMapSlide';
 import AdminStoryMapSlide from './components/AdminStoryMapSlide';
 import DormStoryMapSlide from './components/DormStoryMapSlide';
+import ScreenFlowSlide from './components/ScreenFlowSlide';
 import MVPPrioritySlide from './components/MVPPrioritySlide';
+import ImplementationScopeSlide from './components/ImplementationScopeSlide';
 import RoadmapSlide from './components/RoadmapSlide';
+import MockupPrototypeSlide from './components/MockupPrototypeSlide';
 import SummarySlide from './components/SummarySlide';
 
 const slides = [
   { id: 1, component: TitleSlide, title: '표지' },
   { id: 2, component: OverviewSlide, title: '프로젝트 개요' },
   { id: 3, component: EpicDefinitionSlide, title: '사용자 유형 및 에픽' },
-  { id: 4, component: StudentStoryMapSlide, title: '학생 스토리맵' },
-  { id: 5, component: PatrolStoryMapSlide, title: '순찰차 스토리맵' },
-  { id: 6, component: AdminStoryMapSlide, title: '관리자 스토리맵' },
-  { id: 7, component: DormStoryMapSlide, title: '당직자 스토리맵' },
-  { id: 8, component: MVPPrioritySlide, title: 'MVP 우선순위' },
-  { id: 9, component: RoadmapSlide, title: '개발 로드맵' },
-  { id: 10, component: SummarySlide, title: '요약' },
+  { id: 4, component: IntegratedFlowSlide, title: '전체 시스템 플로우' },
+  { id: 5, component: StudentStoryMapSlide, title: '학생 스토리맵' },
+  { id: 6, component: PatrolStoryMapSlide, title: '순찰차 스토리맵' },
+  { id: 7, component: AdminStoryMapSlide, title: '관리자 스토리맵' },
+  { id: 8, component: DormStoryMapSlide, title: '당직자 스토리맵' },
+  { id: 9, component: ScreenFlowSlide, title: '에픽별 화면 구성 및 흐름' },
+  { id: 10, component: MVPPrioritySlide, title: 'MVP 우선순위' },
+  { id: 11, component: ImplementationScopeSlide, title: '구현 범위 정의' },
+  { id: 12, component: RoadmapSlide, title: '개발 로드맵' },
+  { id: 13, component: MockupPrototypeSlide, title: '목업 프로토타입' },
+  { id: 14, component: SummarySlide, title: '요약' },
 ];
 
 export default function App() {
@@ -52,7 +60,7 @@ export default function App() {
       <div className="flex-1 flex items-center justify-center p-8">
         <div className="w-full max-w-7xl aspect-[16/9] bg-white rounded-2xl shadow-2xl overflow-hidden relative">
           <CurrentSlideComponent />
-          
+
           {/* Slide Number */}
           <div className="absolute bottom-6 right-6 text-slate-400 text-sm">
             {currentSlide + 1} / {slides.length}
